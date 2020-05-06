@@ -19,8 +19,8 @@ app.use(session({
   }))
 
 // Passport middleware
-app.use(passport.initialize());
-app.use(passport.session());  
+app.use(passport.initialize()); // invoke serialize method
+app.use(passport.session());  // invoke deserialize method
 
 
 //connect-flash
